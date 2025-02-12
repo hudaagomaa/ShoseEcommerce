@@ -1,0 +1,29 @@
+  
+  .recommended-title {
+    margin-left: 20rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+
+.recommended-btns {
+    display: flex;
+    margin-left: 20rem;
+  }
+  .btns {
+    width: 150px;
+    font-size: 25px;
+    padding: 20px 30px;
+    margin-left: 15px;
+    background: transparent;
+    border: none;
+    border: 0.6px solid #ccc;
+    border-radius: 5px;
+    color: #323232;
+    cursor: pointer;
+  }
+  .btns:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+  }
