@@ -1,6 +1,6 @@
 .sidebar {
   background-color: #f8f9fa;
-    width: 11%;
+   width: 11%;
     position: fixed;
     height: 100%;
     border-right: 2px solid #e5e5e5;
@@ -9,7 +9,12 @@
     flex-direction: column;
     align-items: center;
   }
- 
+  .sidebar {
+    overflow-y: auto; 
+    max-height: 100vh; 
+  
+
+  } 
   
   
   .logo-container {
@@ -24,3 +29,58 @@
 
     margin-top: 1.3rem;
   }
+  .container-side {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (max-width: 767px) {
+    .container-side {
+      width: 20%;
+      height: 100vh;
+
+   
+    }
+    
+    
+    .sidebar-title {
+      /* background-color: aqua; */
+      font-size: 14px;
+      margin-left: 25px;
+      margin-top: 7px;
+      text-align: center;
+  }
+    .logo-container {
+      font-size: 16px;
+      
+    }
+    .sidebar-label-container{
+      /* background-color: chocolate; */
+      font-size: 10px;
+      padding-left: 20px;
+      text-align: center;
+
+    }
+    
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  

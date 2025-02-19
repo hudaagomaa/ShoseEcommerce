@@ -73,3 +73,27 @@
     margin-top: 3rem;
     border-color: #f7f7f7;
   }
+
+  /* @media (max-width: 767px) {
+    .sidebar-title {
+      font-size: 8px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background-color: aquamarine;
+      width: 10px;
+    }
+    .sidebar-items {
+      margin-top: 10px;
+    }
+    
+    .sidebar-label-container {
+      font-size: 5px;
+      font-weight: normal;
+      display: block;
+    
+      padding-left: 2px;
+     
+    }
+    
+    
+  } */

@@ -6,10 +6,10 @@ import './SideBar.css';
 const Sidebar = ({ handleChange }) => {
   return (
     <>
-      <section className="sidebar">
+      <section className="sidebar container-side">
         <div className="logo-container">
           <h1>🛒</h1>
-        </div>
+        </div> 
         <Category handleChange={handleChange} />
         <Price handleChange={handleChange} />
         <Colors handleChange={handleChange} />
