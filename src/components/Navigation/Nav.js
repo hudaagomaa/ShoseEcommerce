@@ -1,38 +1,33 @@
-import React from 'react';
-import "./Nav.css"
-import { FaHeart } from "react-icons/fa";
-import { FaShoppingCart } from "react-icons/fa";
-import { HiUserAdd } from "react-icons/hi";
+import { FiHeart } from "react-icons/fi";
+import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
+import "./Nav.css";
 
 
-
-
-export default function Nav() {
+const Nav = ({ handleInputChange, query }) => {
   return (
-  <>
-    <nav className='nav'>
-      <div className='nav-container'>
-    <input 
-    type="filter"
-     className="search-input" 
-    placeholder='enter your search  shoes'/>
-    </div>
-    <div className="profile-container">
-<a className='nav-icons'>
-<FaHeart className='icons' />
-</a>
-<a className='nav-icons'>
-<FaShoppingCart className='icons' />
-
-</a>
-<a className='nav-icons'>
-<HiUserAdd className='icons' />
-</a>
-  </div>
-
-  </nav>
-  
-</>
-
+    <nav>
+      <div className="nav-container">
+        <input
+          className="search-input"
+          type="text"
+          onChange={handleInputChange}
+          value={query}
+          placeholder="Enter your search shoes."
+        />
+      </div>
+      <div className="profile-container">
+        <a href="#">
+          <FiHeart className="nav-icons" />
+        </a>
+        <a href="">
+          <AiOutlineShoppingCart className="nav-icons" />
+        </a>
+        <a href="">
+          <AiOutlineUserAdd className="nav-icons" />
+        </a>
+      </div>
+    </nav>
   );
-}
+};
+
+export default Nav;

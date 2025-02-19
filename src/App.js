@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useMemo } from "react";
 
 import Navigation from "./components/Navigation/Nav";
 import Products from "./components/Products/Products";
@@ -11,16 +12,19 @@ import "./index.css";
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // ----------- Input Filter -----------
-  const [query, setQuery] = useState("");
-
+//   // ----------- Input Filter -----------
+ const [query, setQuery] = useState("");
+ 
   const handleInputChange = (event) => {
-    setQuery(event.target.value);
-  };
+  setQuery(event.target.value);
+ };
 
   const filteredItems = products.filter(
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
-  );
+   );
+
+
+
 
   // ----------- Radio Filtering -----------
   const handleChange = (event) => {

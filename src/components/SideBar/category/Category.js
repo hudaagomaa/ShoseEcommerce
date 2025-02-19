@@ -8,32 +8,32 @@ function Category({ handleChange }) {
 
       <div>
         <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test" />
+          <input onChange={handleChange} type="radio" value="" name="test1" />
           <span className="checkmark all"></span>All
         </label>
         <Input
           handleChange={handleChange}
           value="sneakers"
           title="Sneakers"
-          name="test"
+          name="test1"
         />
         <Input
           handleChange={handleChange}
           value="flats"
           title="Flats"
-          name="test"
+          name="test1"
         />
         <Input
           handleChange={handleChange}
           value="sandals"
           title="Sandals"
-          name="test"
+          name="test1"
         />
         <Input
           handleChange={handleChange}
           value="heels"
           title="Heels"
-          name="test"
+          name="test1"
         />
       </div>
     </div>
