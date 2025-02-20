@@ -64,14 +64,27 @@
   @media (min-width: 768px) {
     .container {
       width: 750px;
+      
+    }
+    .card-container{
+      margin-left: 155px;
+
     }
   }
   
   @media (min-width: 992px) {
     .container {
-      width: 970px;
-    }
+      width: 900px;
+      margin-left: 214px;
+      display: flex
+;
+      flex-wrap: wrap;
   }
+
+    }
+    
+ 
+  
   
   @media (min-width: 1200px) {
     .container {
